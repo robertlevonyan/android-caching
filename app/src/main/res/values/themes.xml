@@ -6,4 +6,9 @@
     <item name="colorAccent">@color/colorYellow</item>
     <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
   </style>
+
+  <style name="BottomNavigationTheme" parent="Widget.MaterialComponents.BottomNavigationView">
+    <item name="colorPrimary">@color/colorYellow</item>
+    <item name="android:textColorPrimary">@color/colorYellow</item>
+  </style>
 </resources>

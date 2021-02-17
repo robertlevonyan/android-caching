@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/bnDropBoxStore"
+    android:icon="@drawable/ic_dropbox"
+    android:title="@string/title_dropbox_store" />
+  <item
+    android:id="@+id/bnObjectBox"
+    android:icon="@drawable/ic_object_box"
+    android:title="@string/title_object_box" />
+  <item
+    android:id="@+id/bnRealm"
+    android:icon="@drawable/ic_realm"
+    android:title="@string/title_realm" />
+  <item
+    android:id="@+id/bnRoom"
+    android:icon="@drawable/ic_room"
+    android:title="@string/title_room" />
+  <item
+    android:id="@+id/bnSqlDelight"
+    android:icon="@drawable/ic_sqldelight"
+    android:title="@string/title_sql_delight" />
+</menu>

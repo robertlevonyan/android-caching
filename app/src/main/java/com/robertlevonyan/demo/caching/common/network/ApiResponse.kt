@@ -11,12 +11,12 @@ data class ApiResponse(
 )
 
 data class Movie(
+    @SerializedName("id")
+    val id: Long,
     @SerializedName("backdrop_path")
     val backdropPath: String,
     @SerializedName("poster_path")
     val posterPath: String,
-    @SerializedName("id")
-    val id: Long,
     @SerializedName("title")
     val title: String,
     @SerializedName("overview")

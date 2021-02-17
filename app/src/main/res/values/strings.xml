@@ -1,3 +1,8 @@
 <resources>
   <string name="app_name">Android Caching Demo</string>
+  <string name="title_dropbox_store">DropBox Store</string>
+  <string name="title_object_box">Object Box</string>
+  <string name="title_realm">Realm</string>
+  <string name="title_room">Room</string>
+  <string name="title_sql_delight">Sql Delight</string>
 </resources>

@@ -9,8 +9,8 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface MovieDao {
   @Insert(onConflict = OnConflictStrategy.REPLACE)
-  suspend fun saveMovies(vararg movies: Movie)
+  suspend fun saveMovies(vararg movies: RoomMovie)
 
-  @Query("SELECT * FROM Movie")
-  fun getMovies(): Flow<List<Movie>>
+  @Query("SELECT * FROM RoomMovie")
+  fun getMovies(): Flow<List<RoomMovie>>
 }

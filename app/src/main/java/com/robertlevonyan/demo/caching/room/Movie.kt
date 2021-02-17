@@ -7,7 +7,7 @@ import java.util.*
 import com.robertlevonyan.demo.caching.common.network.Movie as ApiMovie
 
 @Entity
-data class Movie(
+data class RoomMovie(
     @PrimaryKey
     val id: Long,
     val backdropPath: String,
@@ -18,6 +18,6 @@ data class Movie(
     val releaseDate: Date,
 )
 
-fun ApiMovie.toRoomMovie(): Movie = Movie(id, backdropPath, posterPath, title, overview, releaseDate)
+fun ApiMovie.toRoomMovie(): RoomMovie = RoomMovie(id, backdropPath, posterPath, title, overview, releaseDate)
 
-fun Movie.toMovie(): ApiMovie = ApiMovie(id, backdropPath, posterPath, title, overview, releaseDate)
+fun RoomMovie.toMovie(): ApiMovie = ApiMovie(id, backdropPath, posterPath, title, overview, releaseDate)

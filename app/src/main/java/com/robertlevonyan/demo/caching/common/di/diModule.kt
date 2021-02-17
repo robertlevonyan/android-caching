@@ -10,12 +10,17 @@ import com.robertlevonyan.demo.caching.common.view.realm.RealmViewModel
 import com.robertlevonyan.demo.caching.common.view.room.RoomViewModel
 import com.robertlevonyan.demo.caching.common.view.sqldelight.SqlDelightViewModel
 import com.robertlevonyan.demo.caching.room.AppDatabase
+import io.realm.Realm
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val diModule = module {
   // retrofit
   single<ApiService> { RetrofitClient.getClient().create(ApiService::class.java) }
+
+  // realm
+
+  single { Realm.getDefaultInstance() }
 
   // room
   single { AppDatabase.getInstance(get()) }
@@ -29,7 +34,7 @@ val diModule = module {
 
   single { ObjectBoxRepository() }
 
-  single { RealmRepository() }
+  single { RealmRepository(get()) }
 
   single { RoomRepository(get()) }
 

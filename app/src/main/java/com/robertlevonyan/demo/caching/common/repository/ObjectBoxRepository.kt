@@ -8,5 +8,5 @@ class ObjectBoxRepository : DbRepository {
   override suspend fun save(movies: List<Movie>) {
   }
 
-  override fun getMovies(): Flow<List<Movie>> = emptyFlow()
+  fun getMovies(): Flow<List<Movie>> = emptyFlow()
 }

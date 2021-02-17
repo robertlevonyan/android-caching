@@ -1,8 +1,17 @@
 package com.robertlevonyan.demo.caching.common.view.realm
 
+import androidx.lifecycle.viewModelScope
 import com.robertlevonyan.demo.caching.common.repository.RealmRepository
 import com.robertlevonyan.demo.caching.common.view.BaseViewModel
+import kotlinx.coroutines.flow.emitAll
+import kotlinx.coroutines.launch
 
-class RealmViewModel(private val repository: RealmRepository) : BaseViewModel() {
-  // TODO: Implement the ViewModel
+class RealmViewModel(repository: RealmRepository) : BaseViewModel() {
+  init {
+    repository.getMovies {
+      viewModelScope.launch {
+        allMovies.emitAll(it)
+      }
+    }
+  }
 }

@@ -1,0 +1,18 @@
+import java.util.Date;
+
+CREATE TABLE SqldMovie(
+id INTEGER PRIMARY KEY,
+backdropPath TEXT,
+posterPath TEXT,
+title TEXT,
+overview TEXT,
+releaseDate TEXT as Date
+);
+
+selectAll:
+ SELECT *
+ FROM SqldMovie;
+
+insert:
+ INSERT OR IGNORE INTO SqldMovie(id, backdropPath, posterPath, title, overview, releaseDate)
+ VALUES ?;

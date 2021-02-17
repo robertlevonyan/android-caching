@@ -7,8 +7,12 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //realm
         classpath "io.realm:realm-gradle-plugin:10.3.1"
+        //objectbox
         classpath "io.objectbox:objectbox-gradle-plugin:2.8.1"
+        //sqldelight
+        classpath 'com.squareup.sqldelight:gradle-plugin:1.4.3'
     }
 }
 

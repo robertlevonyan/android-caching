@@ -5,4 +5,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface DbRepository {
   suspend fun save(movies: List<Movie>)
+
+  fun getMovies(): Flow<List<Movie>>
 }

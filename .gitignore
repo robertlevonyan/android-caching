@@ -89,3 +89,4 @@ lint/tmp/
 /gradle/wrapper/gradle-wrapper.jar
 /.idea/jarRepositories.xml
 /.idea/misc.xml
+/app/objectbox-models/default.json.bak

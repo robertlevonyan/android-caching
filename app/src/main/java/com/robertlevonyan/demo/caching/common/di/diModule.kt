@@ -1,5 +1,6 @@
 package com.robertlevonyan.demo.caching.common.di
 
+import com.robertlevonyan.demo.caching.Database
 import com.robertlevonyan.demo.caching.common.network.ApiService
 import com.robertlevonyan.demo.caching.common.network.RetrofitClient
 import com.robertlevonyan.demo.caching.common.repository.*
@@ -11,7 +12,12 @@ import com.robertlevonyan.demo.caching.common.view.sqldelight.SqlDelightViewMode
 import com.robertlevonyan.demo.caching.objectbox.ObMovie
 import com.robertlevonyan.demo.caching.objectbox.ObjectBox
 import com.robertlevonyan.demo.caching.room.AppDatabase
+import com.robertlevonyan.demo.caching.sqldelight.DateAdapter
+import com.robertlevonyan.demo.caching.sqldelight.SqldMovie
+import com.squareup.sqldelight.android.AndroidSqliteDriver
+import com.squareup.sqldelight.db.SqlDriver
 import io.realm.Realm
+import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -30,6 +36,13 @@ val diModule = module {
 
   single { get<AppDatabase>().movieDao() }
 
+  // sql delight
+  single<SqlDriver> { AndroidSqliteDriver(Database.Schema, androidContext(), "caching.db") }
+
+  single { Database(get(), SqldMovie.Adapter(DateAdapter())) }
+
+  single { get<Database>().moviesQueries }
+
   // repositories
   single { MovieRepository(get()) }
 
@@ -39,7 +52,7 @@ val diModule = module {
 
   single { RoomRepository(get()) }
 
-  single { SqlDelightRepository() }
+  single { SqlDelightRepository(get()) }
 
   // view model
   viewModel { MainViewModel(get(), get(), get(), get(), get()) }

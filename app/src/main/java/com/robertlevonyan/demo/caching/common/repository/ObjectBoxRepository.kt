@@ -18,7 +18,7 @@ class ObjectBoxRepository(private val moviesBox: Box<ObMovie>) : DbRepository {
     }
   }
 
-  fun getMovies(): Flow<List<Movie>> = callbackFlow {
+  override fun getMovies(): Flow<List<Movie>> = callbackFlow {
     val subscription = moviesBox.query().build().subscribe()
         .observer { data -> offer(data.map { it.toMovie() }) }
     awaitClose { subscription.cancel() }

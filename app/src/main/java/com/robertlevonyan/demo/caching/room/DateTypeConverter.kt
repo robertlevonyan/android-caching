@@ -10,20 +10,8 @@ class DateTypeConverter {
   }
 
   @TypeConverter
-  fun fromStringToDate(value: String?): Date? {
-    return try {
-      synchronized(format) {
-        format.parse(value.orEmpty())
-      }
-    } catch (e: Throwable) {
-      null
-    }
-  }
+  fun fromStringToDate(value: String?): Date? = format.parse(value.orEmpty())
 
   @TypeConverter
-  fun toDateFromString(value: Date?): String? = value?.let {
-    synchronized(format) {
-      format.format(value)
-    }
-  }
+  fun toDateFromString(value: Date?): String? = format.format(value ?: Date())
 }

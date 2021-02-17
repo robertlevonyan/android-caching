@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'realm-android'
 apply plugin: 'io.objectbox'
+apply plugin: 'com.squareup.sqldelight'
 
 android {
     compileSdkVersion 30
@@ -70,4 +71,6 @@ dependencies {
     kapt 'androidx.room:room-compiler:2.2.6'
 
     //sqldelight
+    implementation "com.squareup.sqldelight:android-driver:1.4.3"
+    implementation "com.squareup.sqldelight:coroutines-extensions-jvm:1.4.3"
 }

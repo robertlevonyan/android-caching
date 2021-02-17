@@ -8,6 +8,8 @@ import com.robertlevonyan.demo.caching.common.view.objectbox.ObjectBoxViewModel
 import com.robertlevonyan.demo.caching.common.view.realm.RealmViewModel
 import com.robertlevonyan.demo.caching.common.view.room.RoomViewModel
 import com.robertlevonyan.demo.caching.common.view.sqldelight.SqlDelightViewModel
+import com.robertlevonyan.demo.caching.objectbox.ObMovie
+import com.robertlevonyan.demo.caching.objectbox.ObjectBox
 import com.robertlevonyan.demo.caching.room.AppDatabase
 import io.realm.Realm
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -17,8 +19,10 @@ val diModule = module {
   // retrofit
   single<ApiService> { RetrofitClient.getClient().create(ApiService::class.java) }
 
-  // realm
+  // object box
+  single { ObjectBox.boxStore.boxFor(ObMovie::class.java) }
 
+  // realm
   single { Realm.getDefaultInstance() }
 
   // room
@@ -29,7 +33,7 @@ val diModule = module {
   // repositories
   single { MovieRepository(get()) }
 
-  single { ObjectBoxRepository() }
+  single { ObjectBoxRepository(get()) }
 
   single { RealmRepository(get()) }
 

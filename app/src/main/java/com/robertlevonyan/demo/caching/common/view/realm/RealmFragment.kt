@@ -26,7 +26,10 @@ class RealmFragment : Fragment() {
     lifecycleScope.launchWhenCreated {
       val adapter = MoviesAdapter()
       binding.rvMovies.adapter = adapter
-      viewModel.allMovies.collect { adapter.apply { submitList(it) } }
+      viewModel.allMovies.collect {
+        println(it.toTypedArray().contentToString())
+        adapter.submitList(it)
+      }
     }
   }
 }

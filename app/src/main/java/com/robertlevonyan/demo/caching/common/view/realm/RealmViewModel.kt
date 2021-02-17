@@ -8,10 +8,9 @@ import kotlinx.coroutines.launch
 
 class RealmViewModel(repository: RealmRepository) : BaseViewModel() {
   init {
-    repository.getMovies {
-      viewModelScope.launch {
-        allMovies.emitAll(it)
-      }
+    viewModelScope.launch {
+      val movies = repository.getMovies()
+      allMovies.emitAll(movies)
     }
   }
 }

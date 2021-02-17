@@ -4,7 +4,6 @@ import com.robertlevonyan.demo.caching.common.network.ApiService
 import com.robertlevonyan.demo.caching.common.network.RetrofitClient
 import com.robertlevonyan.demo.caching.common.repository.*
 import com.robertlevonyan.demo.caching.common.view.MainViewModel
-import com.robertlevonyan.demo.caching.common.view.dropboxstore.DropBoxStoreViewModel
 import com.robertlevonyan.demo.caching.common.view.objectbox.ObjectBoxViewModel
 import com.robertlevonyan.demo.caching.common.view.realm.RealmViewModel
 import com.robertlevonyan.demo.caching.common.view.room.RoomViewModel
@@ -30,8 +29,6 @@ val diModule = module {
   // repositories
   single { MovieRepository(get()) }
 
-  single { DropBoxStoreRepository() }
-
   single { ObjectBoxRepository() }
 
   single { RealmRepository(get()) }
@@ -41,9 +38,7 @@ val diModule = module {
   single { SqlDelightRepository() }
 
   // view model
-  viewModel { MainViewModel(get(), get(), get(), get(), get(), get()) }
-
-  viewModel { DropBoxStoreViewModel(get()) }
+  viewModel { MainViewModel(get(), get(), get(), get(), get()) }
 
   viewModel { ObjectBoxViewModel(get()) }
 

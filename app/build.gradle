@@ -5,16 +5,16 @@ apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "com.robertlevonyan.demo.caching"
+        applicationId 'com.robertlevonyan.demo.caching'
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -57,14 +57,10 @@ dependencies {
 
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
-
-    //dropbox store
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 
     //objectbox
-
-    //realm
 
     //room
     implementation 'androidx.room:room-runtime:2.2.6'

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
   <item
-    android:id="@+id/bnDropBoxStore"
-    android:icon="@drawable/ic_dropbox"
-    android:title="@string/title_dropbox_store" />
-  <item
     android:id="@+id/bnObjectBox"
     android:icon="@drawable/ic_object_box"
     android:title="@string/title_object_box" />

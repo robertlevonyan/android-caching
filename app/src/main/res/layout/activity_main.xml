@@ -20,6 +20,6 @@
     android:layout_height="?actionBarSize"
     android:layout_gravity="bottom"
     android:theme="@style/BottomNavigationTheme"
-    app:itemHorizontalTranslationEnabled="true"
+    app:labelVisibilityMode="labeled"
     app:menu="@menu/menu_main_tabs" />
 </FrameLayout>

@@ -1,6 +1,6 @@
 # <img src="https://github.com/robertlevonyan/AndroidCaching/blob/master/app/src/main/ic_launcher-playstore.png"  width="50" height="50" /> &nbsp;&nbsp;&nbsp; Android Caching Demo
 
-|A demo project with examples of some popular caching libraries for Android|<img src="https://github.com/robertlevonyan/DragAndDropDemo/blob/master/media/caching.png"  width="450" />|
+|A demo project with examples of some popular caching libraries for Android|<img src="https://github.com/robertlevonyan/AndroidCaching/blob/master/media/caching.png"  width="450" />|
 |----------------------------------------------------------------------------------------------|-----------|
 
 Also I've created an article about caching in Android. You can read it [here](https://robertlevonyan.medium.com/cache-data-in-android-2e4042b07df3)

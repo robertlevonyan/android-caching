@@ -27,7 +27,6 @@ class RealmFragment : Fragment() {
       val adapter = MoviesAdapter()
       binding.rvMovies.adapter = adapter
       viewModel.allMovies.collect {
-        println(it.toTypedArray().contentToString())
         adapter.submitList(it)
       }
     }

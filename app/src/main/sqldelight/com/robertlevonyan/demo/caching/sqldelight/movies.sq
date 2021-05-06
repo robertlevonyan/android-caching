@@ -6,7 +6,7 @@ backdropPath TEXT,
 posterPath TEXT,
 title TEXT,
 overview TEXT,
-releaseDate TEXT as Date
+releaseDate Text AS Date
 );
 
 selectAll:

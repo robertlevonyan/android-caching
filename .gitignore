@@ -91,3 +91,4 @@ lint/tmp/
 /.idea/misc.xml
 /app/objectbox-models/default.json.bak
 /.idea/
+.DS_Store

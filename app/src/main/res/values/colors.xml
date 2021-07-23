@@ -3,7 +3,7 @@
   <color name="colorPrimary">#ffffff</color>
   <color name="colorPrimaryDark">#f1f1f1</color>
   <color name="colorYellow">#e7a942</color>
-  <color name="colorPrimaryInverse">#1A1A18</color>
+  <color name="colorPrimaryInverse">#1a1a1a</color>
   <color name="colorYellowSecondary">#DDD5C3</color>
   <color name="ic_launcher_background">#F1F1F1</color>
 </resources>

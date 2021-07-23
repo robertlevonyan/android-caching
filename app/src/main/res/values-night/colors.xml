@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="colorPrimary">#1A1A18</color>
+  <color name="colorPrimary">#1a1a1a</color>
   <color name="colorPrimaryDark">#000000</color>
   <color name="colorYellow">#e7a942</color>
   <color name="colorPrimaryInverse">#ffffff</color>
   <color name="colorYellowSecondary">#786441</color>
-  <color name="ic_launcher_background">#1A1A18</color>
+  <color name="ic_launcher_background">#F1F1F1</color>
 </resources>

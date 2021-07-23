@@ -4,8 +4,8 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath("com.android.tools.build:gradle:4.2.0")
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0")
+    classpath("com.android.tools.build:gradle:4.2.2")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
     //realm
     classpath("io.realm:realm-gradle-plugin:10.4.0")
     //objectbox

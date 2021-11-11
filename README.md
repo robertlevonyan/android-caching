@@ -1,4 +1,4 @@
-# <img src="https://github.com/robertlevonyan/AndroidCaching/blob/master/app/src/main/ic_launcher-playstore.png"  width="50" height="50" /> &nbsp;&nbsp;&nbsp; Android Caching Demo
+# <img src="https://github.com/robertlevonyan/android-caching/blob/master/app/src/main/ic_launcher-playstore.png"  width="50" height="50" /> &nbsp;&nbsp;&nbsp; Android Caching Demo
 
 |A demo project with examples of some popular caching libraries for Android|<img src="https://github.com/robertlevonyan/AndroidCaching/blob/master/media/caching.png"  width="450" />|
 |----------------------------------------------------------------------------------------------|-----------|
@@ -13,6 +13,10 @@ Also I've created an article about caching in Android. You can read it [here](ht
 - **Twitter**: https://twitter.com/@RobertLevonyan
 - **Facebook**: https://facebook.com/robert.levonyan
 - **Google Play**: https://play.google.com/store/apps/dev?id=5477562049350283357
+
+<a href="https://www.buymeacoffee.com/robertlevonyan">
+  <img src="https://github.com/robertlevonyan/android-caching/blob/master/media/coffee.jpeg"  width="300" />
+</a>
 
 ## Licence
 

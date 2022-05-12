@@ -47,10 +47,10 @@ dependencies {
   implementation("androidx.activity:activity-ktx:1.4.0")
   implementation("androidx.appcompat:appcompat:1.4.1")
   implementation("androidx.constraintlayout:constraintlayout:2.1.3")
-  implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
-  implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
-  implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
-  implementation("com.google.android.material:material:1.5.0")
+  implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
+  implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
+  implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+  implementation("com.google.android.material:material:1.6.0")
   implementation("org.koin:koin-android:2.2.2")
   implementation("org.koin:koin-androidx-viewmodel:2.2.2")
   implementation("io.coil-kt:coil:1.4.0")
@@ -64,9 +64,9 @@ dependencies {
   implementation("io.objectbox:objectbox-kotlin:2.8.1")
 
   //room
-  implementation("androidx.room:room-runtime:2.4.1")
-  implementation("androidx.room:room-ktx:2.4.1")
-  kapt("androidx.room:room-compiler:2.4.1")
+  implementation("androidx.room:room-runtime:2.4.2")
+  implementation("androidx.room:room-ktx:2.4.2")
+  kapt("androidx.room:room-compiler:2.4.2")
 
   //sqldelight
   implementation("com.squareup.sqldelight:android-driver:1.5.0")

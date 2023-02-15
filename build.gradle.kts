@@ -4,8 +4,8 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-    classpath("com.android.tools.build:gradle:7.2.0")
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
+    classpath("com.android.tools.build:gradle:7.4.1")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0")
     //realm
     classpath("io.realm:realm-gradle-plugin:10.4.0")
     //objectbox

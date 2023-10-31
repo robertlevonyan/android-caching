@@ -37,7 +37,7 @@ val diModule = module {
   single { get<AppDatabase>().movieDao() }
 
   // sql delight
-  single<SqlDriver> { AndroidSqliteDriver(Database.Schema, androidContext(), "caching.db") }
+  single<SqlDriver> { AndroidSqliteDriver(schema = Database.Schema, context = androidContext(), name = "caching.db") }
 
   single { Database(get(), SqldMovie.Adapter(DateAdapter())) }
 

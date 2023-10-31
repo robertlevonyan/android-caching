@@ -20,7 +20,7 @@ class ObjectBoxRepository(private val moviesBox: Box<ObMovie>) : DbRepository {
 
   override fun getMovies(): Flow<List<Movie>> = callbackFlow {
     val subscription = moviesBox.query().build().subscribe()
-        .observer { data -> offer(data.map { it.toMovie() }) }
+        .observer { data -> trySend(data.map { it.toMovie() }) }
     awaitClose { subscription.cancel() }
   }
 }
